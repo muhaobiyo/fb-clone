@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="script.js"></script>
+    <title>Your Social Media</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Facebook</h1>
+        </header>
+        <main>
+            <section class="post-section">
+                <div class="post">
+                    <img src="./images/facebook.png" alt="User Avatar">
+                    <p class="post-text">What's on your mind?</p>
+                </div>
+                <!-- Add more posts here -->
+            </section>
+            <!-- Existing content goes here -->
+
+            <!-- Login Form -->
+            <section class="auth-form">
+                <h2>Login</h2>
+                <form onsubmit="handleLogin(event)">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+
+                    <button type="submit">Login</button>
+                   
+                </form>
+                
+            </section>
+
+            <section class="auth-form">
+                <h2>Create My Account</h2>
+                <button id="createAccountBtn" onclick="openSignUpForm()">Create My Account</button>
+            </section>
+
+
+            <!-- Signup Form -->
+            
+
+            <section class="auth-form hidden" id="signupForm">
+                
+                <h2>Sign Up</h2>
+                <form onsubmit="handleSignUp(event)">
+                    <label for="newUsername">Username:</label>
+                    <input type="text" id="newUsername" name="newUsername" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="newPassword">Password:</label>
+                    <input type="password" id="newPassword" name="newPassword" required>
+
+                    <button type="submit">Sign Up</button>
+                </form>
+            </section>
+
+        </main>
+        <footer class="footer">
+            <p>&copy; 2023 Your Social Media. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
