@@ -1,6 +1,10 @@
-function openSignUpForm() {
-    document.getElementById('signupForm').classList.remove('hidden');
-}
+document.addEventListener('DOMContentLoaded', function() {
+    // Ensure the DOM is fully loaded before attaching event listeners
+
+    document.getElementById('createAccountBtn').addEventListener('click', openSignUpForm);
+    document.getElementById('signupForm').addEventListener('submit', handleSignUp);
+    document.getElementById('loginForm').addEventListener('submit', handleLogin);
+});
 
 function openSignUpForm() {
     document.getElementById('signupForm').classList.remove('hidden');
